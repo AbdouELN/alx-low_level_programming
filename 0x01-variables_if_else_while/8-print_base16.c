@@ -15,8 +15,7 @@ int main(void)
 	for (h = 0; h < 6; h++)
 	{
 		putchar(h + 'a');
-		putchar(h + 'A' -10);
+		putchar('\n');
 	}
-	putchar('\n');
 	return (0);
 }
