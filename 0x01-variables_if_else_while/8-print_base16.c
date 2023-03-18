@@ -12,7 +12,7 @@ int main(void)
 	{
 		putchar(h + '0');
 	}
-	for (h = 0; h <= 6; h++)
+	for (h = 0; h < 6; h++)
 	{
 		putchar(h + 'a');
 	}
