@@ -18,14 +18,14 @@ int main(void)
 			{
 				if (l > j && j > i)
 				{
-					putchar('i');
-					putchar('j');
-					putchar('l');
-				}
-				if (i != 7 || j != 8 || l != 9)
-				{
-					putchar(' ');
-					putchar(',');
+					putchar('i' + '0');
+					putchar('j' + '0');
+					putchar('l' + '0');
+					if (i != 7 || j != 8 || l != 9)
+					{
+						putchar(' ');
+						putchar(',');
+					}
 				}
 			}
 		}
