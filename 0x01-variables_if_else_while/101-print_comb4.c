@@ -23,8 +23,8 @@ int main(void)
 					putchar(l + '0');
 					if (i != 7 || j != 8 || l != 9)
 					{
-						putchar(' ');
 						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
