@@ -18,9 +18,9 @@ int main(void)
 			{
 				if (l > j && j > i)
 				{
-					putchar('i' + '0');
-					putchar('j' + '0');
-					putchar('l' + '0');
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(l + '0');
 					if (i != 7 || j != 8 || l != 9)
 					{
 						putchar(' ');
