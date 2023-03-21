@@ -1,4 +1,4 @@
-#include <main.h>
+#include <unistd.h>
 /**
  * __putchar - writes putchar to stdout
  *
