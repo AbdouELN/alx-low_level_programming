@@ -6,14 +6,14 @@
  *
  * Return: The absolut value of v
  */
-int _abs(int n)
+int _abs(int v)
 {
-	if (n >= 0)
+	if (v >= 0)
 	{
-		return (n);
+		return (v);
 	}
 	else
 	{
-		return (-n);
+		return (-v);
 	}
 }
