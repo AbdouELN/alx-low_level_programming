@@ -1,14 +1,12 @@
 #include "main.h"
 /**
- * main - Entry point
- *
- * print-alphabet - Print all alphabet
- *
+ * print_alphabet - print all alphabet
  */
 void print_alphabet(void)
 {
 	char letter;
-	for (letter = 'a';letter <= 'z';letter++)
+
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
 		_putchar(letter);
 	}
