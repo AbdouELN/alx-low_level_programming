@@ -1,14 +1,12 @@
 #include "main.h"
 /**
- * __putchar - writes putchar to stdout
- *
  * main - print _putchar
  *
  * @__putchar: characteries to print
  *
  * Return: Always 0 (Seccess)
  */
-int main(void){
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
