@@ -2,12 +2,11 @@
 /**
  * main - Entry point
  *
- * Return: Fizz-Buzz test
+ * Return: Always 0
  */
-void main(void)
+int main(void)
 {
 	int i;
-	int j;
 
 	for (i = 0; i < 100; i++)
 	{
@@ -28,4 +27,5 @@ void main(void)
 			printf("%d", i);
 		}
 	}
+	return (0);
 }
