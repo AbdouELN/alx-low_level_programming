@@ -6,6 +6,8 @@
  *
  * @src: copiy from
  *
+ * @n: number of string copies
+ *
  * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
@@ -23,6 +25,10 @@ char *_strncpy(char *dest, char *src, int n)
 			dest[i] = src[i];
 		}
 	}
-	dest[i] = '\0';
+	while (j < n)
+	{
+		dest[i] = '\0';
+		j++;
+	}
 	return (dest);
 }
