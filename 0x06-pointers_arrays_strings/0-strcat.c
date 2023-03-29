@@ -3,7 +3,7 @@
  * *_strcat - that concatenates two strings
  * @dest: copy to
  * @src: copy from
- * Return: dest 
+ * Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
@@ -15,13 +15,12 @@ char *_strcat(char *dest, char *src)
 	}
 	for (j = 0; dest[j] != '\0'; j++)
 	{
-		;
-	}
-	if (src[i] != '\0')
-	{
-		dest[j] = src[i];
-		j++;
-		i++;
+		if (src[i] != '\0')
+		{
+			dest[j] = src[i];
+			j++;
+			i++;
+		}
 	}
 	return (dest);
 }
