@@ -6,11 +6,12 @@
  *
  * @src: copiy from
  *
- * Return: dest 
+ * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
+	int j;
 
 	for (i = 0; dest[i] != '\0'; i++)
 	{
@@ -25,3 +26,4 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	dest[i] = '\n';
 	return (dest);
+}
