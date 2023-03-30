@@ -29,7 +29,7 @@ char *cap_string(char *cap)
 		{
 			while (cap[i + 1] >= 'a' && cap[i + 1] <= 'z')
 			{
-				cap[i + 1] = cap[i + 1] - 32;
+				cap[i + 1] -= 32;
 			}
 		}
 	}
