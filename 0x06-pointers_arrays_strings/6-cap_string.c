@@ -12,6 +12,10 @@ char *cap_string(char *cap)
 
 	for (i = 0; cap[i] < '\0'; i++)
 	{
+		while (i = 0 && cap[i] >= 'a' && cap[i] <= 'z')
+		{
+			cap[i] -= 32;
+		}
 		if (cap[i] == ',' ||
 			cap[i] == ';' ||
 			cap[i] == '.' ||
@@ -24,10 +28,9 @@ char *cap_string(char *cap)
 			cap[i] == '"' ||
 			cap[i] == ' ' ||
 			cap[i] == '\n' ||
-			cap[i] == '\t' ||
-			i == 0)
+			cap[i] == '\t')
 		{
-			while (cap[i + 1] >= 'a' && cap[i + 1] <= 'z')
+			if (cap[i + 1] >= 'a' && cap[i + 1] <= 'z')
 			{
 				cap[i + 1] -= 32;
 			}
