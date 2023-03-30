@@ -12,22 +12,25 @@ char *cap_string(char *cap)
 
 	for (i = 0; cap[i] < '\0'; i++)
 	{
-		if (cap[i] == ',' ||
-			cap[i] == ';' ||
-			cap[i] == '.' ||
-			cap[i] == '!' ||
-			cap[i] == '?' ||
-			cap[i] == '(' ||
-			cap[i] == ')' ||
-			cap[i] == '{' ||
-			cap[i] == '}' ||
-			cap[i] == '"' ||
-			cap[i] == ' ' ||
-			cap[i] == '\n' ||
-			cap[i] == '\t' ||
-			i == 0)
+		while (cap[i] <= 'z' && cap[i] >= 'a')
 		{
-			cap[i + 1] = cap[i + 1] - 32;
+			if (cap[i] == ',' ||
+				cap[i] == ';' ||
+				cap[i] == '.' ||
+				cap[i] == '!' ||
+				cap[i] == '?' ||
+				cap[i] == '(' ||
+				cap[i] == ')' ||
+				cap[i] == '{' ||
+				cap[i] == '}' ||
+				cap[i] == '"' ||
+				cap[i] == ' ' ||
+				cap[i] == '\n' ||
+				cap[i] == '\t' ||
+				i == 0)
+			{
+				cap[i + 1] = cap[i + 1] - 32;
+			}
 		}
 	}
 	return (cap);
