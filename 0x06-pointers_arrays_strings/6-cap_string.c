@@ -27,7 +27,7 @@ char *cap_string(char *cap)
 			cap[i] == '\t' ||
 			i == 0)
 		{
-			cap[i + 1] -= 32;
+			cap[i + 1] = cap[i + 1] - 32;
 		}
 	}
 	return (cap);
