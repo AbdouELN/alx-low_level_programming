@@ -12,7 +12,7 @@ char *cap_string(char *cap)
 
 	for (i = 0; cap[i] < '\0'; i++)
 	{
-		while (cap[i] == ',' ||
+		if (cap[i] == ',' ||
 			cap[i] == ';' ||
 			cap[i] == '.' ||
 			cap[i] == '!' ||
