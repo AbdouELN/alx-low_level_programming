@@ -16,23 +16,23 @@ char *cap_string(char *cap)
 		{
 			cap[i] -= 32;
 		}
-		if (cap[i] == ',' ||
-			cap[i] == ';' ||
-			cap[i] == '.' ||
-			cap[i] == '!' ||
-			cap[i] == '?' ||
-			cap[i] == '(' ||
-			cap[i] == ')' ||
-			cap[i] == '{' ||
-			cap[i] == '}' ||
-			cap[i] == '"' ||
-			cap[i] == ' ' ||
-			cap[i] == '\n' ||
-			cap[i] == '\t')
+		if (cap[i - 1] == ',' ||
+			cap[i - 1] == ';' ||
+			cap[i - 1] == '.' ||
+			cap[i - 1] == '!' ||
+			cap[i - 1] == '?' ||
+			cap[i - 1] == '(' ||
+			cap[i - 1] == ')' ||
+			cap[i - 1] == '{' ||
+			cap[i - 1] == '}' ||
+			cap[i - 1] == '"' ||
+			cap[i - 1] == ' ' ||
+			cap[i - 1] == '\n' ||
+			cap[i - 1] == '\t')
 		{
-			if (cap[i + 1] >= 'a' && cap[i + 1] <= 'z')
+			if (cap[i] >= 'a' && cap[i] <= 'z')
 			{
-				cap[i + 1] -= 32;
+				cap[i] -= 32;
 			}
 		}
 	}
