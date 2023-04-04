@@ -3,6 +3,7 @@
  * *_memcpy - copy
  * @dest: p
  * @src: p
+ * @n: byte
  * Return: dest
  *
  */
