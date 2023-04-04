@@ -20,7 +20,7 @@ unsigned int _strspn(char *s, char *accept)
 			}
 			accept++;
 		}
-		s++
+		s++;
 	}
 	return (nb);
 }
