@@ -3,6 +3,7 @@
  * _sqrt_recursion - function that returns the
  * natural square root of a number.
  * @n: number
+ * find_sqrt - find square of a number
  * Return: The natural sqrt root of n
  */
 int _sqrt_recursion(int n)
@@ -18,7 +19,7 @@ int _sqrt_recursion(int n)
 	return (find_sqrt(n, 1));
 }
 /**
- * find_sqrt - found sqrt of n
+ * find_sqrt - find square of a number
  * @n: number
  * @i: potontial sqrt root
  * return: the natural sqrt root 
