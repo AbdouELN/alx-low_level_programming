@@ -11,11 +11,11 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	if (n = 0 || n = 1)
+	if (n == 0 || n == 1)
 	{
 		return (n);
 	}
-	return (_sqrt_recursion(n, n / 2));
+	return (find_sqrt(n, n / 2));
 }
 /**
  * find_sqrt - found sqrt of n
@@ -23,7 +23,7 @@ int _sqrt_recursion(int n)
  * @i: potontial sqrt root
  * return: the natural sqrt root 
  */
-int _sqrt_recursion(int n, int i)
+int find_sqrt(int n, int i)
 {
 	if (i <= 0)
 	{
@@ -33,5 +33,5 @@ int _sqrt_recursion(int n, int i)
 	{
 		return (i);
 	}
-	return (_sqrt_recursion(n, i - 1));
+	return (find_sqrt(n, i + 1));
 }
