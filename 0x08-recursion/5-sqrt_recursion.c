@@ -22,13 +22,13 @@ int _sqrt_recursion(int n)
  * find_sqrt - find square of a number
  * @n: number
  * @i: potontial sqrt root
- * return: the natural sqrt root 
+ * return: the natural sqrt root
  */
 int find_sqrt(int n, int i)
 {
 	if (i <= 0)
 	{
-		return(0);
+		return ²(0);
 	}
 	if (i * i == n)
 	{
