@@ -6,8 +6,9 @@
  */
 int is_palindrome(char *s)
 {
-	int len = int _strlen(char *s);
-	int palindrome(char *s, int len);
+	int len = _strlen(s);
+
+	return (palindrome(s, len));
 }
 /**
  * _strlen - return length of a string
@@ -21,12 +22,12 @@ int _strlen(char *s)
 	{
 		return (0);
 	}
-	return (1 + _strlen(s + 1))
+	return (1 + _strlen(s + 1));
 }
 /**
  * palindrome - cheks if a string is a palindrome
  * @s: input string
- * @ien: length of a string
+ * @len: length of a string
  * Return: returns 1 if a string is a palindrome and 0 if not.
  */
 int palindrome(char *s, int len)
@@ -37,7 +38,7 @@ int palindrome(char *s, int len)
 	}
 	if (*s == *(s + len - 1))
 	{
-		return (palindrome(s + 1, len - 2);
+		return (palindrome(s + 1, len - 2));
 	}
 	return (0);
 }
