@@ -28,7 +28,7 @@ int find_sqrt(int n, int i)
 {
 	if (i <= 0)
 	{
-		return ²(0);
+		return (0);
 	}
 	if (i * i == n)
 	{
