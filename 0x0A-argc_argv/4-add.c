@@ -4,7 +4,8 @@
  * main - adds positive numbers.
  * @argc: arguments counter
  * @argv: arguments value
- * return: 1 if one of the numbers contain not digits symbols otherwise 0(Success)
+ * Return: 1 if one of the numbers contain not digits symbols
+ * otherwise 0(Success)
  */
 int main(int argc, char *argv[])
 {
