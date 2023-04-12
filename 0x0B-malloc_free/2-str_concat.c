@@ -15,11 +15,11 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		s1 = '\0';
+		s1 = "\0";
 	}
 	if (s2 == NULL)
 	{
-		s2 = '\0';
+		s2 = "\0";
 	}
 	for (lens1 = 0; s1[lens1] != '\0'; lens1++)
 	{
@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	s3 = malloc((lens1 + lens2) * sizeof(char) + 1);
 
-	if (s3 == NULL)
+	if (s3 == 0)
 	{
 		return (0);
 	}
