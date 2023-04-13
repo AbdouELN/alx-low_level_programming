@@ -43,7 +43,7 @@ char *argstostr(int ac, char **av)
  */
 int _strlen(char *s)
 {
-	size = 0;
+	int size = 0;
 
 	for (size = 0; s[size] != '\0'; size++)
 	{
