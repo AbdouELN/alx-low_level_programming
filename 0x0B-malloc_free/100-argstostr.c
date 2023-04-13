@@ -43,11 +43,11 @@ char *argstostr(int ac, char **av)
  */
 int _strlen(char *s)
 {
-	int i, size = 0;
+	size = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (size = 0; s[size] != '\0'; size++)
 	{
-		size++;
+		;
 	}
 	return (size);
 }
