@@ -34,7 +34,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
  * @n: number of byte
  * Return: str
  */
-char _memset(char *str, char by, unsigned int n)
+char *_memset(char *str, char by, unsigned int n)
 {
 	char *s = str;
 
