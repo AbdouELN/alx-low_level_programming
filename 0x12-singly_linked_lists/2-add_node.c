@@ -2,7 +2,7 @@
 /**
  * add_node - adds a new node at the beginning of a list_t list.
  * @head: address
- * @str: nod
+ * @str: node
  * Return: the address of the new element, or NULL if it failed
  *
  */
@@ -17,7 +17,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (str)
 	{
 		new_h->str = strdup(str);
-		if (new_h->str)
+		if (!new_h->str)
 		{
 			free(new_h);
 			return (NULL);
