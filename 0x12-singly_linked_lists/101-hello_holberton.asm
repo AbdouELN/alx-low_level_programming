@@ -7,4 +7,5 @@ main:
 	call	printf
 
 section		.data
-	msg	db 'Hello, Holberton', 0xa, 0
+	hello db "Hello, Holberton", 10  ; 10 is ASCII code for newline character
+	format db "%s", 0
