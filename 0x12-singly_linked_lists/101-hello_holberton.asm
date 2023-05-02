@@ -23,14 +23,3 @@ main:
     mov rsp, rbp
     pop rbp
     ret
-To compile and run this program, save it in a file named hello.asm. Then, use the following commands:
-
-bash
-Copy code
-$ nasm -f elf64 hello.asm -o hello.o
-$ gcc -no-pie hello.o -o hello
-$ ./hello
-You should see the output:
-
-Copy code
-Hello, Holberton
