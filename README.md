@@ -1,1 +1,1 @@
-how to begining with c
+more malloc and free
