@@ -90,4 +90,5 @@ void print_result(int *result, int size)
 
 	for (i = 0; i < size; i++)
 		_putchar(result[i] + '0');
+	_putchar('\n');
 }
