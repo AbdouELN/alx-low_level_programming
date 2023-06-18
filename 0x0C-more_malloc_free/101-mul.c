@@ -33,7 +33,6 @@ void _multiply(char *num1, char *num2)
 
 	free(result);
 }
-
 /**
  * _set_to_zero - Sets an array to zero
  * @arr: The array to set
@@ -87,4 +86,8 @@ void perform_multiplication(int *result, char *num1, char *num2, int len1,
  */
 void print_result(int *result, int size)
 {
-	int i = 0;
+	int i;
+
+	for (i = 0; i < size; i++)
+		_putchar(result[i] + '0');
+}
